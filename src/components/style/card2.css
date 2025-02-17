@@ -62,8 +62,9 @@ input#open {
   background-color: transparent;
   z-index:6;
   cursor: pointer;
-}
 
+
+}
 #open:checked ~ .card-front {
   transform: rotateY(-155deg);
   box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
