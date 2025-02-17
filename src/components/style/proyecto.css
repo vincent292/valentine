@@ -24,11 +24,12 @@ body {
     height: 100vh;
 }
 
-h1 {
+h1,h2,h3{
+
     font-family: "Marck Script", serif;
     text-align: center;
-    font-size: 60px;
-    margin-bottom: 50px;
+    font-size:30px;
+ 
     color: #444;
 }
 

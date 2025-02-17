@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2acac;
-  font-family: 'Mochiy Pop P One', sans-serif;
-}
 
 input#open {
   display: none;
@@ -144,7 +136,7 @@ input#open {
   top:35px;
 }
 
-.heart {
+.hearts {
   position: relative;
   background-color: #d04e4e;
   height: 60px;
@@ -155,7 +147,7 @@ input#open {
   animation: .8s beat infinite;
 }
   
-.heart:before, .heart:after {
+.hearts:before, .hearts:after {
   content:"";
   background-color: #d04e4e;
   border-radius:50%;
@@ -164,12 +156,12 @@ input#open {
   position: absolute;
   }
   
-.heart:before {
+.hearts:before {
   top:-30px;
   left:0;
 }
   
-.heart:after {
+.hearts:after {
   left:30px;
   top:0;
 }

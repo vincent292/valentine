@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 import "./style/proyecto.css";
 
+import { Link } from "react-router-dom";
+
 const ValentineLetter = () => {
   const [isFlapped, setIsFlapped] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
@@ -43,10 +45,37 @@ const ValentineLetter = () => {
           <div className="envelope">
             <div className={`letter ${isOpened ? "opened" : ""}`} ref={letterRef}>
               <div className="text">
-                <strong>Querida Estrella</strong>
+                <strong> Mi Niña hermosa</strong>
                 <p>
-                  Hoy es <strong>San Valentín</strong>, el día oficial de los <em>corazones</em>, el <em>chocolate</em> y las declaraciones de amor dramáticas (como en las telenovelas). Así que prepárate, porque aquí va la mía: Desde que te conocí, mi corazón late más rápido que <code>WiFi</code> gratis en una plaza pública. Eres más brillante que un mensaje de "<strong>te amo</strong>" en <strong>LED gigante</strong> y más dulce que el doble de caramelo en un café con extra de crema. Si fueras un algoritmo, serías el más eficiente: optimizas mi felicidad con la menor cantidad de esfuerzo. Si fueras un bug, serías el único que no querría corregir. Y si fueras una aplicación, serías la que siempre tengo anclada en mi pantalla principal. Gracias por hacer de mi vida una versión mejorada, sin errores (bueno, quizá con algunos, pero todos adorables). <br /> <strong>Feliz San Valentín</strong>, mi <em>estrella favorita</em>. <br /> Con mucho <strong>código</strong> (y <strong>amor</strong>), <br /> Tu programador enamorado. <br /> <span style={{ fontSize: "0.9em", color: "grey" }}>PD: Si esta carta fuera un programa, su salida sería:</span> <br /> <code>"Eres lo mejor que me ha pasado."</code>
-                </p>
+
+  <br />
+  <br />
+  Hoy es <strong>San Valentín</strong>, el día donde los <em>corazones</em>, el <em>chocolate</em> y las historias de amor cobran más sentido.  
+  Quería hacer algo especial, algo fuera de lo común, porque si hay una historia que me encanta, es la nuestra.
+  <br />
+  <br />
+  Llevamos juntos <strong>1 año y meses</strong>, y en todo este tiempo hemos crecido tanto.  
+  Me has enseñado a ser mejor, a ver la vida con otros ojos, y yo he tenido el privilegio de ayudarte a brillar aún más.  
+  No somos perfectos, tenemos errores, pero juntos encontramos la manera de mejorar, de entendernos y de seguir adelante,  
+  porque lo nuestro siempre vale la pena.
+  <br />
+  <br />
+  Si la vida fuera un desafío, seríamos el mejor equipo; si fuera un camino, lo recorrería mil veces si eso significa estar contigo.  
+  Y aunque a veces el mundo parezca difícil, sé que mientras estemos juntos, nada nos detendrá,  
+  porque somos <strong>tú y yo contra el mundo</strong>.
+  <br />
+  <br />
+  Gracias por ser mi refugio, mi alegría y mi hogar en cada abrazo.  
+  No sé qué sería de mí sin ti, pero sé que contigo soy la mejor versión de lo que siempre quise ser.
+  <br />
+  <br />
+  <strong>Feliz San Valentín</strong>, mi compañera de vida y de sueños.
+  <br />
+  <br />
+  Con todo mi amor,  
+  <br />
+  <strong>Vincent Arias</strong>
+</p>
               </div>
             </div>
           </div>
@@ -55,7 +84,12 @@ const ValentineLetter = () => {
           <div className="tap-left"></div>
         </div>
       </div>
+
+      <Link to="/">
+          <button className="crushbtn">Home</button>
+        </Link>
     </div>
+
   );
 };
 
